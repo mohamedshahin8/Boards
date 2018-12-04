@@ -1,0 +1,10 @@
+.navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+
+}
+
+.thead-inverse tr {
+    background-color: #272b2f ;
+    color:  #e9ecef ;
+}
