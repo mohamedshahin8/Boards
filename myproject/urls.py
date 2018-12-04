@@ -22,7 +22,7 @@ from boards import views
 
 urlpatterns = [
     url(r'^$', views.BoardListView.as_view(), name='home'),
-    url(r'^home/signup/$', accounts_views.signup, name='signup'),
+    url(r'^signup/$', accounts_views.signup, name='signup'),
     url(r'^login/$', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
     url(r'^logout/$', auth_views.LogoutView.as_view(), name='logout'),
     url(r'^boards/(?P<pk>\d+)/topics/(?P<topic_pk>\d+)/$', views.PostListView.as_view(), name='topic_posts'),
